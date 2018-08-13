@@ -1,0 +1,25 @@
+{
+    "name": "haassie/seo_demo_extension",
+    "description": "Demo extension to show how to use the SEO features in TYPO3 core",
+    "type": "typo3-cms-extension",
+    "license": "GPL-3.0-or-later",
+    "require": {
+	"typo3/cms-core": "9.4.*@dev",
+	"typo3/cms-backend": "9.4.*@dev",
+	"typo3/cms-seo": "9.4.*@dev"
+    },
+    "authors": [
+        {
+            "name": "Richard Haeser",
+            "email": "richardhaeser@gmail.com"
+        },
+	{
+	    "name": "Riny van Tiggelen",
+	    "email": "riny.van.tiggelen@maxserv.com"
+	},
+	{
+	    "name": "Richard Vollebregt",
+	    "email": "richard.vollebregt@maxserv.com"
+	}
+    ]
+}
