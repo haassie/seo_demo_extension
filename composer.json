@@ -4,22 +4,27 @@
     "type": "typo3-cms-extension",
     "license": "GPL-3.0-or-later",
     "require": {
-	"typo3/cms-core": "9.4.*@dev",
-	"typo3/cms-backend": "9.4.*@dev",
-	"typo3/cms-seo": "9.4.*@dev"
+		"typo3/cms-core": "9.4.*@dev",
+		"typo3/cms-backend": "9.4.*@dev",
+		"typo3/cms-seo": "9.4.*@dev"
     },
+	"autoload": {
+		"psr-4": {
+			"Haassie\\SeoDemoExtension\\": "Classes/"
+		}
+	},
     "authors": [
         {
             "name": "Richard Haeser",
             "email": "richardhaeser@gmail.com"
         },
-	{
-	    "name": "Riny van Tiggelen",
-	    "email": "riny.van.tiggelen@maxserv.com"
-	},
-	{
-	    "name": "Richard Vollebregt",
-	    "email": "richard.vollebregt@maxserv.com"
-	}
+		{
+			"name": "Riny van Tiggelen",
+			"email": "riny.van.tiggelen@maxserv.com"
+		},
+		{
+			"name": "Richard Vollebregt",
+			"email": "richard.vollebregt@maxserv.com"
+		}
     ]
 }
