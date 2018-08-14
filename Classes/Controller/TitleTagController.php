@@ -10,6 +10,8 @@ class TitleTagController extends ActionController
 {
     public function demo1Action()
     {
+        $GLOBALS['TSFE']->altPageTitle = 'altPageTitle';
+
         $provider = GeneralUtility::makeInstance(Demo1TitleTagProvider::class);
         $provider->setTitle('Demo 1');
 
