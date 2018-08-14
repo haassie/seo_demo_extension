@@ -18,6 +18,7 @@ defined('TYPO3_MODE') || die('Access denied.');
         'TitleTag' => 'demo2',
     ],
     [
+        'TitleTag' => 'demo2'
     ]
 );
 
@@ -25,10 +26,12 @@ defined('TYPO3_MODE') || die('Access denied.');
 $titleTagProviderRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\TitleTag\TitleTagProviderRegistry::class);
 $titleTagProviderRegistry->registerProvider(
     'demo1',
-    \Haassie\SeoDemoExtension\TitleTagProvider\Demo1TitleTagProvider::class
+    \Haassie\SeoDemoExtension\TitleTagProvider\Demo1TitleTagProvider::class,
+    ['demo2']
 );
 
 $titleTagProviderRegistry->registerProvider(
     'demo2',
-    \Haassie\SeoDemoExtension\TitleTagProvider\Demo2TitleTagProvider::class
+    \Haassie\SeoDemoExtension\TitleTagProvider\Demo2TitleTagProvider::class,
+    ['defaultTitle']
 );
